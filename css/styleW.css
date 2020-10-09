@@ -1,0 +1,108 @@
+/* Denna fil skall innehålla din CSS kod */
+* {
+    margin: 1;
+}
+
+
+.gridWrapper {
+    display:grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-areas:
+    "he he he he he"
+    "na na na na as"
+    "a1 a1 a1 a1 as"
+    "a2 a2 a3 a3 as"
+    "a4 a5 se a6 as"
+    "a7 a7 a7 a7 as"
+    "a8 a8 a8 a8 as"
+    "fo fo fo fo fo"
+
+    ;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-gap: 1px;
+    
+
+}
+
+.header {
+    grid-area: he;
+    background-color: lightpink;
+}
+
+.nav {
+    grid-area: na;
+    background-color: sandybrown;
+}
+
+.article1 {
+    grid-area: a1;
+    background-color: limegreen;
+}
+
+.article2 {
+    grid-area: a2;
+    background-color: lightskyblue;
+}
+
+.article3 {
+    grid-area: a3;
+    background-color: salmon;
+}
+
+.article4 {
+    grid-area: a4;
+    background-color: lightseagreen;
+}
+
+.article5 {
+    grid-area: a5;
+    background-color: skyblue;
+}
+
+.article6 {
+    grid-area: a6;
+    background-color: red;
+}
+
+.article7 {
+    grid-area: a7;
+    background-color: purple;
+}
+
+.article8 {
+    grid-area: a8;
+    background-color: royalblue;
+}
+
+.innerGridWrapper {
+    grid-area: se;
+    display: grid;
+    background-color: white;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1px;
+
+}
+
+.footer {
+    grid-area: fo;
+    background-color: slateblue;
+}
+
+.aside {
+    grid-area: as;
+    background-color: orange;
+  
+}
+
+h5 {
+    font-family: sans-serif;
+    font-size: 30px;
+    margin: 8px;
+}
+
+.innerdiv {
+    background-color: green;
+}
