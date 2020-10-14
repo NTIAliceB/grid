@@ -1,0 +1,99 @@
+* {
+    margin: 1px;
+}
+
+div {
+    padding-top: 100px ;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 100px;
+}
+
+
+.gridWrapper {
+
+    display: grid;
+    width: 75vw;
+    height: 75vw;
+    grid-template-areas: 
+    "he he he"
+    "a1 a2 a3"
+    "a4 a4 a4"
+    "a5 a5 a5"
+    "a6 a6 a6"
+    "se se as"
+    "se se as"
+    "fo fo fo"
+    
+    ;
+
+    grid-template-columns: repeat(3,1fr);
+    grid-row: repeat(8,1fr);
+    grid-gap: 1px;
+
+
+}
+
+.header {
+    grid-area: he;
+    background-color: indigo;
+}
+
+.article1 {
+    grid-area: a1;
+    background-color: beige;
+}
+
+.article2 {
+    grid-area: a2;
+    background-color: khaki;
+}
+
+.article3 {
+    grid-area: a3;
+    background-color: olive;
+}
+
+.article4 {
+    grid-area: a4;
+    background-color: violet;
+}
+
+.article5 {
+    grid-area: a5;
+    background-color: blue;
+}
+
+.article6 {
+    grid-area: a6;
+    background-color: firebrick;
+}
+
+.aside {
+    grid-area: as;
+    background-color: cadetblue;
+}
+
+.footer {
+    grid-area: fo;
+    background-color: coral;
+}
+
+.innerGridWrapper {
+    grid-area: se;
+    display: grid;
+    background-color: white;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1px;
+    
+}
+
+.innerDiv {
+    background-color: darkcyan;
+    font-size: 100px;
+}
+
+h2 {
+    font-family: fantasy;
+}
