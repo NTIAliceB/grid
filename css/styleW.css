@@ -28,7 +28,7 @@
 
 .header {
     grid-area: he;
-    background-color: lightpink;
+    background-color: rgba(172, 206, 119, 0.774);
 }
 
 .nav {

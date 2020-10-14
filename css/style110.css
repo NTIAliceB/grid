@@ -1,0 +1,62 @@
+* {
+    margin: 10px;
+}
+
+.gridWrapper {
+
+    display: grid;
+    width: 100vw;
+    height: 100vw;
+    grid-template-areas: 
+    "he he he"
+    "aa aa aa"
+    "se se as"
+    "se se as"
+    "aa aa aa"
+    "aa aa aa"
+    "fo fo fo"
+    ;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-gap: 1px;
+
+}
+
+.header {
+    grid-area: he;
+    background-color: teal;
+}
+
+.article {
+    grid-area: aa;
+    background-color: violet;
+}
+
+.aside {
+    grid-area: as;
+    background-color: tomato;
+}
+
+.footer {
+    grid-area: fo;
+    background-color: yellowgreen;
+}
+
+.innerGridWrapper {
+    grid-area: se;
+    display: grid;
+    background-color: white;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 1px;
+}
+
+.innerDiv {
+    background-color: gold;
+}
+
+
+h1 {
+    font-family: fantasy;
+}
